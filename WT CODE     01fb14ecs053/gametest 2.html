@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Squash</title>
+		<meta charset="utf-8">
+		
+		<link href="play.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		
+	</head>
+	
+	<body>
+		<div id="game">
+			<div id="gameUI">
+				<div id="gameIntro">
+					<h1>Squash</h1>
+					<p><p>
+					<p><a id="gamePlay" class="button" href="">Play</a></p>
+					<input type="checkbox" id="dif" name="vehicle" value="Bike">Increase difficulty
+				</div>
+
+				<div id="gameStats">
+					<p>Score: <span id="gameRemaining"></span></p>
+					<p> <span class="gameScore"></span></p>
+					<p><a class="gameReset" href="">Reset</a></p>
+				</div>
+				<div id="gameComplete">
+					<h1>You win!</h1>
+					<p>Congratulations, you completed the game with score <span class="gameScore"></span></p>
+					<p><a class="gameReset button" href="">Play again</a></p>
+				</div>
+			</div>
+			<canvas id="gameCanvas" width="350" height="600">
+				<!-- Insert fallback content here -->
+			</canvas>
+<script type="text/javascript" src="push3.js"></script>
+		</div>
+	</body>
+</html>
